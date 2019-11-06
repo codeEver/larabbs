@@ -49,5 +49,10 @@ class Topic extends Model
     {
         return route('topics.show', array_merge([$this->id, $this->slug], $params));
     }
+    //与回复表的关系一对多
+    public function replies()
+    {
+        return $this->hasMany(Reply::class);
+    }
 
 }
