@@ -94,7 +94,7 @@ return array(
      *
      * @type string
      */
-    'home_page' => 'users',
+    'home_page' => 'topics',
 
     /*
      * The route to which the user will be taken when they click the "back to site" button
@@ -138,5 +138,8 @@ return array(
      * @type array
      */
     'locales' => [],
+
+    // 当选项 `permission` 权限检测不通过时，会重定向用户到此处设置的路径
+    'login_path' => 'permission-denied',
 
 );
